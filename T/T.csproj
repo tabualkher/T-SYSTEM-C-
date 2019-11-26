@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0206F8EE-2B18-430B-AC8B-BBF0CAB1B380}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>T</RootNamespace>
+    <AssemblyName>T</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hydrattz-Multipurpose-Alphabet-Letter-T-blue.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="FrmBranches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBranches.Designer.cs">
+      <DependentUpon>FrmBranches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCashPay.Designer.cs">
+      <DependentUpon>FrmCashPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCashReceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCashReceived.Designer.cs">
+      <DependentUpon>FrmCashReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompany.Designer.cs">
+      <DependentUpon>FrmCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCostCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCostCenter.Designer.cs">
+      <DependentUpon>FrmCostCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiscalYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiscalYear.Designer.cs">
+      <DependentUpon>FrmFiscalYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJournalEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJournalEntry.Designer.cs">
+      <DependentUpon>FrmJournalEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJournalType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJournalType.Designer.cs">
+      <DependentUpon>FrmJournalType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPayCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPayCheque.Designer.cs">
+      <DependentUpon>FrmPayCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecivedCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecivedCheque.Designer.cs">
+      <DependentUpon>FrmRecivedCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmToaLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmToaLevels.Designer.cs">
+      <DependentUpon>FrmToaLevels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTreeOfAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTreeOfAccount.Designer.cs">
+      <DependentUpon>FrmTreeOfAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBranches.resx">
+      <DependentUpon>FrmBranches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCashPay.resx">
+      <DependentUpon>FrmCashPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCashReceived.resx">
+      <DependentUpon>FrmCashReceived.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompany.resx">
+      <DependentUpon>FrmCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCostCenter.resx">
+      <DependentUpon>FrmCostCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiscalYear.resx">
+      <DependentUpon>FrmFiscalYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJournalEntry.resx">
+      <DependentUpon>FrmJournalEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJournalType.resx">
+      <DependentUpon>FrmJournalType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPayCheque.resx">
+      <DependentUpon>FrmPayCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecivedCheque.resx">
+      <DependentUpon>FrmRecivedCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmToaLevels.resx">
+      <DependentUpon>FrmToaLevels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTreeOfAccount.resx">
+      <DependentUpon>FrmTreeOfAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hydrattz-Multipurpose-Alphabet-Letter-T-blue.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
